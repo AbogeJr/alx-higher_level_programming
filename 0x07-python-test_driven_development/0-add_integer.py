@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 
 """
-Function that adds two integers
+Function that adds 2 integers.
 """
 
 
 def add_integer(a, b=98):
 
     """
-    Function that adds 2 integers
+    Function that adds 2 integers. a and b must be integers or floats,
+    otherwise TypeError exception is raised with the message
+    a must be an integer or b must be an integer. a and b are also
+    casted into integer if they are float.
     """
 
-    if type(a) != int and type(a) != float:
+    if isinstance(a, int) is False and isinstance(a, float) is False:
         raise TypeError("a must be an integer")
-    elif type(b) != int and type(b) != float:
+    if isinstance(b, int) is False and isinstance(b, float) is False:
         raise TypeError("b must be an integer")
-    else:
-        return int(a) + int(b)
+    return int(a) + int(b)
