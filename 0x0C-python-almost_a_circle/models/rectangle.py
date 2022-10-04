@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-from models import base
-
 """
-class Rectangle that inherits from Base
+This module implements a Rectangle object
 """
+from models.base import Base
 
 
-class Rectangle(base.Base):
+class Rectangle(Base):
     """
     Class Rectangle that inherits from Base
     """
